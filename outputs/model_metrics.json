@@ -1,0 +1,13 @@
+{
+  "data_notice": "All records are synthetic demonstration data.",
+  "forecast": {
+    "mae": 1088.57,
+    "rmse": 1456.42,
+    "holdout_months": 6
+  },
+  "churn": {
+    "roc_auc": 0.982,
+    "average_precision": 0.913,
+    "test_records": 3000
+  }
+}
