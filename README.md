@@ -73,15 +73,6 @@ python -m unittest discover -s tests
 
 See [docs/tableau.md](docs/tableau.md) for suggested views and field mappings.
 
-## Optional AWS S3 upload
-
-The pipeline never contacts AWS on its own. If you have configured AWS credentials and want to publish the generated artifacts, run:
-
-```bash
-python scripts/upload_to_s3.py --bucket YOUR_BUCKET --prefix financial-insights-demo
-```
-
-This is an adapter only; it does not claim an AWS deployment. See [docs/aws.md](docs/aws.md).
 
 ## Reproducibility and responsible use
 
@@ -90,13 +81,4 @@ This is an adapter only; it does not claim an AWS deployment. See [docs/aws.md](
 - This is a portfolio demonstration, not a production risk, retention, or financial-decision system.
 - The models are illustrative and should not be used to make decisions about real people.
 
-## Push to GitHub
-
-```bash
-git init
-git add .
-git commit -m "Build AI-powered financial insights dashboard"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/financial-insights-dashboard.git
-git push -u origin main
-```
+'''
